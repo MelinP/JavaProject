@@ -8,8 +8,8 @@ public class Constructor {
     @Test
 
     public void sendEmailAndPassword(String email, String password) {
-        this.waitForElementPresentClearAndSendKeys(email);
-        this.waitForElementPresentClearAndSendKeys(password);
+        waitForElementPresentClearAndSendKeys(email);
+        waitForElementPresentClearAndSendKeys(password);
     }
 
     public void returnName() {
@@ -27,12 +27,12 @@ public class Constructor {
     }
 
     public void waitForElementPresentAndClear() {
-        this.waitForElementPresentAndClick();
+        waitForElementPresentAndClick();
         System.out.println("clearField");
     }
 
     public void waitForElementPresentClearAndSendKeys(String value) {
-        this.waitForElementPresentAndClear();
+        waitForElementPresentAndClear();
         System.out.println("enterValue" + value);
 
     }
