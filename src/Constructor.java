@@ -2,7 +2,7 @@ import org.testng.annotations.Test;
 
 public class Constructor {
 
-    String name;
+    String email;
     String password;
 
     @Test
@@ -13,7 +13,7 @@ public class Constructor {
     }
 
     public void returnName() {
-        System.out.println(this.name);
+        System.out.println(this.email);
     }
     public void returnPassword(){ System.out.println(this.password); }
 
