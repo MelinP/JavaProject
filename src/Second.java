@@ -1,26 +1,22 @@
-import org.openqa.selenium.json.JsonOutput;
 import org.testng.annotations.Test;
 
-public class SecondClass extends MainClass {
+public class Second extends One  {
 
     @Test
 
-    public int hugeNumber(){
-        return 100;
-    }
-
-    public void SecondTest() {
+    public void Answer() {
 
         boolean Otvet = aBiggerThanB(10, 5);
         System.out.println("Otvet:" + Otvet );
 
     }
-
     public boolean aBiggerThanB(int a, int b) {
 
-        boolean result = this.a > this.b;
+        boolean result = a > b;
         return result;
     }
 
-
+    public int hugeNumber(){
+        return 100;
+    }
 }
