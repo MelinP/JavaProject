@@ -1,6 +1,5 @@
 public class MainClass extends Constructor   {
 
-
     public MainClass(String email, String password) {
         this.email = email;
         this.password = password;
@@ -12,16 +11,15 @@ public class MainClass extends Constructor   {
     }
 
     public static void main(String[] args){
-        MainClass Names = new MainClass("Test@mail.com", "1223456");
-        Names.returnEmailAndPassword();
+        MainClass Values = new MainClass("Test@mail.com", "1223456");
+        Values.returnEmailAndPassword();
     }
 
-    public void sendEmailAndPassword(String email, String password) {
-        this.waitForElementPresentClearAndSendKeys(email);
-        this.waitForElementPresentClearAndSendKeys(password);
+    public void SendEmail(){
+        this.sendEmail(email);
     }
-
-
-
+    public void SendPassword(){
+     this.sendPassword(password);
+    }
 
 }

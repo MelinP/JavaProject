@@ -1,5 +1,3 @@
-import org.testng.annotations.Test;
-
 public class Constructor {
 
     String email;
@@ -23,6 +21,13 @@ public class Constructor {
         waitForElementPresentAndClear();
         System.out.println("enterValue" + value);
 
+    }
+    public void sendEmail(String email){
+        waitForElementPresentClearAndSendKeys(email);
+
+    }
+    public void sendPassword(String password) {
+        waitForElementPresentClearAndSendKeys(password);
     }
 
 
